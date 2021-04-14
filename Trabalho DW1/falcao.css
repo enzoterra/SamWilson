@@ -6,8 +6,8 @@
 }
 
 html {
-    height: 3000px;
-    
+    height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 
 /* Header */
 
-header{
+header {
     background-color: rgb(150, 18, 18);
     height: 63px;
     width: 100%;
@@ -32,8 +32,8 @@ header{
 }
 
 
-#div_menu{
-    background-color: rgba(90, 90, 92, 0.7);
+#div_menu {
+    background-color: rgba(90, 90, 92, 0.8);
     width: 250px;
     height: 100%;
     position: fixed;
@@ -41,7 +41,7 @@ header{
     transition: all 0.5s;
 }
 
-.nav_menu{
+.nav_menu {
     background-color: rgba(72, 72, 75, 0.5);
     max-width: 250px;
     height: 100%;
@@ -49,36 +49,36 @@ header{
 }
 
 
-input[type="checkbox"]{
+input[type="checkbox"] {
     display: none;
 }
 
-#img_menu_img{
+#img_menu_img {
     width: 30px;
 
     transition: .3s;
 }
 
-label{
+label {
     top: 9px;
     padding: 8px;
     position: fixed;
     z-index: 2;
 }
 
-label:hover img{
+label:hover img {
     transform: scale(1.01);
     background-color: rgba(160, 160, 160, 0.3);
     border-radius: 4px;
 }
 
 
-input[type="checkbox"]:checked ~ #div_menu{
+input[type="checkbox"]:checked~#div_menu {
     transform: translateX(250px);
 }
 
 
-.lista_menu{
+.lista_menu {
     top: 62px;
     list-style: none;
     position: absolute;
@@ -110,7 +110,7 @@ input[type="checkbox"]:checked ~ #div_menu{
 }
 
 
-#titulo_header{
+#titulo_header {
     font-size: 40px;
     color: white;
     top: 0px;
@@ -134,12 +134,16 @@ input[type="checkbox"]:checked ~ #div_menu{
 
 /* Home */
 
+/* Imagem Superior */
 #img_inicial {
     top: 66px;
     position: relative;
     width: 100%;
-    color: white;
+}
+
+#img_inicial p {
     padding-left: 10px;
+    color: white;
     display: inline;
     font-size: 14px;
 }
@@ -154,12 +158,15 @@ input[type="checkbox"]:checked ~ #div_menu{
     transition: 0.3s;
 }
 
-#img_inicial:hover img{
+#img_inicial:hover img {
     transform: scale(1.015);
     border: 0px solid black;
 }
 
 
+/* Textos */
+
+/* Texto Origem */
 #parte_inicial {
     top: 700px;
     height: 600px;
@@ -169,7 +176,7 @@ input[type="checkbox"]:checked ~ #div_menu{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 35px;
     color: white;
-    top: 570px;
+    top: 590px;
     width: 100%;
     text-align: left;
     margin-left: 100px;
@@ -177,17 +184,21 @@ input[type="checkbox"]:checked ~ #div_menu{
     display: inline;
 }
 
-#flex_origem{
+
+#flex_origem {
     display: flex;
     height: 600px;
+    top: 10px;
+    position: relative;
 }
+
 
 #origem {
     text-indent: 2em;
     color: white;
     font-size: 20px;
     position: relative;
-    top: 250px;
+    top: 290px;
     display: block-flex;
     text-align: left;
     text-align: justify;
@@ -196,30 +207,33 @@ input[type="checkbox"]:checked ~ #div_menu{
 }
 
 
-#img_origem{
+#img_origem {
     width: 400px;
     height: 350px;
     display: flex;
     position: relative;
-    top: 250px;
+    top: 280px;
     text-align: right;
 }
 
-#img_origem img{
+#img_origem img {
     max-width: 450px;
     max-height: 400px;
     width: auto;
     height: auto;
     transition: 0.3s;
 }
-#img_origem:hover img{
-    transform: scale(1.015);
-    border: 0px solid black;
+
+#img_origem:hover img {
+    transform: scale(1.1);
 }
 
-#flex_origem2{
+
+#flex_origem2 {
     display: flex;
     height: 600px;
+    top: 70px;
+    position: relative;
 }
 
 #origem2 {
@@ -227,7 +241,7 @@ input[type="checkbox"]:checked ~ #div_menu{
     color: white;
     font-size: 20px;
     position: relative;
-    top: 200px;
+    top: 150px;
     display: block-flex;
     text-align: left;
     text-align: justify;
@@ -236,37 +250,31 @@ input[type="checkbox"]:checked ~ #div_menu{
 }
 
 
-#img_origem2{
+#img_origem2 {
     width: 400px;
     height: 350px;
     display: flex;
     position: relative;
-    top: 160px;
+    top: 110px;
     text-align: right;
 }
 
-#img_origem2 img{
+#img_origem2 img {
     max-width: 400px;
     max-height: 350px;
     width: auto;
     height: auto;
     transition: 0.3s;
 }
-#img_origem2:hover img{
-    transform: scale(1.015);
-    border: 0px solid black;
+
+#img_origem2:hover img {
+    transform: scale(1.1);
 }
 
-#texto_final {
-    width: 100%;
-    color: white;
-    top: 1250px;
-    position: absolute;
-    text-align: center;
-    padding: 20px;
-}
 
-#ph{
+/* Texto Poderes e Habilidades */
+
+#ph {
     font-size: 20px;
     width: 100%;
     color: white;
@@ -276,16 +284,107 @@ input[type="checkbox"]:checked ~ #div_menu{
     padding: 20px;
 }
 
-#ph h1{
+#ph h1 {
     display: inline-block;
+    padding-left: 30px;
 }
 
-#ph ul{
-    left: 50px;
-    width: 40%;
-    display: block;
-    
+#flex_ph {
+    display: flex;
+    height: 600px;
+    top: 70px;
+    position: relative;
 }
+
+#ph ul {
+    text-align: left;
+    padding: 10px;
+    display: block;
+    top: 10px;
+    position: relative;
+    width: 40%;
+    text-align: justify;
+}
+
+#ph ul li {
+    padding: 10px;
+}
+
+#img_ph img {
+    top: 10px;
+    position: relative;
+    transition: .3s;
+}
+
+#img_ph:hover img {
+    transform: scale(1.1);
+}
+
+
+/* Curiosidades */
+
+#curiosidades {
+    font-size: 20px;
+    width: 100%;
+    color: white;
+    top: 40px;
+    position: relative;
+    text-align: left;
+    padding: 10px;
+}
+
+#curiosidades h1 {
+    display: inline-block;
+    padding-left: 30px;
+}
+
+#flex_curiosidades {
+    width: 100%;
+    display: flex;
+    height: 600px;
+    top: 5px;
+    position: relative;
+}
+
+#flex_curiosidades ul {
+    text-align: left;
+    width: 50%;
+    padding: 10px;
+    display: block;
+    top: 80px;
+    position: relative;
+    text-align: justify;
+}
+
+#flex_curiosidades ul li {
+    padding: 10px;
+}
+
+
+#img_curiosidades{
+    width: 25%;
+    height: 350px;
+    display: flex;
+    top: 70px;
+    position: relative;
+  
+}
+
+#img_curiosidades img {
+    max-width: 400px;
+    max-height: 350px;
+    width: auto;
+    height: auto;
+    transition: 0.3s;
+}
+
+#img_curiosidades:hover img {
+    transform: scale(1.1);
+}
+
+
+
+/*Rodapé*/
 
 footer {
     width: 100%;

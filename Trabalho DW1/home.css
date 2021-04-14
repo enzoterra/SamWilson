@@ -249,7 +249,7 @@ input[type="checkbox"]:checked~#div_menu {
     color: white;
     font-size: 20px;
     position: relative;
-    top: 300px;
+    top: 290px;
     display: block-flex;
     width: 42%;
     height: 400px;
@@ -266,7 +266,7 @@ input[type="checkbox"]:checked~#div_menu {
     height: 450px;
     display: flex;
     position: relative;
-    top: 270px;
+    top: 280px;
 }
 
 #img_descricao img {
