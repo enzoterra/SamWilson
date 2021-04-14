@@ -6,13 +6,18 @@
 }
 
 html {
-    height: 100%;
-    overflow-x:hidden;
+    height: 3000px;
+    
 }
 
 body {
     background-color: rgb(19, 21, 22);
     height: 100%;
+}
+
+#tudo {
+    min-height: 100%;
+    position: relative;
 }
 
 
@@ -133,6 +138,10 @@ input[type="checkbox"]:checked ~ #div_menu{
     top: 66px;
     position: relative;
     width: 100%;
+    color: white;
+    padding-left: 10px;
+    display: inline;
+    font-size: 14px;
 }
 
 #img_inicial img {
@@ -168,45 +177,119 @@ input[type="checkbox"]:checked ~ #div_menu{
     display: inline;
 }
 
-#flex_descricao{
+#flex_origem{
     display: flex;
     height: 600px;
 }
 
-#descricao {
+#origem {
+    text-indent: 2em;
     color: white;
     font-size: 20px;
     position: relative;
-    top: 300px;
+    top: 250px;
     display: block-flex;
     text-align: left;
+    text-align: justify;
     width: 42%;
     height: 400px;
 }
 
 
-#img_descricao{
-    width: 300px;
-    height: 450px;
+#img_origem{
+    width: 400px;
+    height: 350px;
     display: flex;
     position: relative;
-    top: 270px;
+    top: 250px;
     text-align: right;
 }
 
-#img_descricao img{
-    max-width: 300px;
-    max-height: 450px;
+#img_origem img{
+    max-width: 450px;
+    max-height: 400px;
     width: auto;
     height: auto;
+    transition: 0.3s;
+}
+#img_origem:hover img{
+    transform: scale(1.015);
+    border: 0px solid black;
+}
+
+#flex_origem2{
+    display: flex;
+    height: 600px;
+}
+
+#origem2 {
+    text-indent: 2em;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 200px;
+    display: block-flex;
+    text-align: left;
+    text-align: justify;
+    width: 42%;
+    height: 400px;
 }
 
 
-footer {
+#img_origem2{
+    width: 400px;
+    height: 350px;
+    display: flex;
+    position: relative;
+    top: 160px;
+    text-align: right;
+}
+
+#img_origem2 img{
+    max-width: 400px;
+    max-height: 350px;
+    width: auto;
+    height: auto;
+    transition: 0.3s;
+}
+#img_origem2:hover img{
+    transform: scale(1.015);
+    border: 0px solid black;
+}
+
+#texto_final {
     width: 100%;
     color: white;
     top: 1250px;
     position: absolute;
+    text-align: center;
+    padding: 20px;
+}
+
+#ph{
+    font-size: 20px;
+    width: 100%;
+    color: white;
+    top: 80px;
+    position: relative;
+    text-align: left;
+    padding: 20px;
+}
+
+#ph h1{
+    display: inline-block;
+}
+
+#ph ul{
+    left: 50px;
+    width: 40%;
+    display: block;
+    
+}
+
+footer {
+    width: 100%;
+    color: white;
     text-align: center;
     padding: 20px;
 }
