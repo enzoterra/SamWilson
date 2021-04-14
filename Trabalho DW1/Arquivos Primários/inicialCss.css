@@ -1,0 +1,143 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    
+}
+
+header{
+    background-color: rgb(150, 18, 18);
+    height: 55px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+
+body {
+    background-color: rgb(19, 21, 22);
+}  
+
+
+#div_menu{
+    background-color: rgba(90, 90, 92, 0.5);
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    left: -250px;
+    transition: all 0.5s;
+}
+
+.nav_menu{
+    background-color: rgba(72, 72, 75, 0.5);
+    max-width: 250px;
+    height: 100%;
+    position: absolute;
+}
+
+
+input[type="checkbox"]{
+    display: none;
+}
+
+#img_menu_img{
+    width: 30px;
+}
+
+label{
+    top: 5px;
+    padding: 8px;
+    position: fixed;
+    z-index: 2;
+}
+
+input[type="checkbox"]:checked ~ #div_menu{
+    transform: translateX(250px);
+}
+
+
+.lista_menu{
+    top: 55px;
+    list-style: none;
+    position: absolute;
+    width: 250px;
+}
+
+/* #header ul li */
+.item_menu {
+    display: initial;
+}
+
+/* #header ul li a */
+.link_menu {
+    font-family: Calibri;
+    font-size: 20px;
+    color: white;
+    padding: 20px 15px;
+    display: block;
+    text-decoration: none;
+    transition: all .4s;
+}
+
+
+/*Efeito de Transição*/
+#nav_menu ul li a:hover {
+    background-color: rgb(26, 116, 190);
+} 
+
+
+
+#titulo{
+    font-size: 40px;
+    color: white;
+    top: 0px;
+    text-align: center;
+    position: relative;
+}
+
+
+
+#historia_falcao {
+    display: block;
+    width: 800px;
+    height: 200px;
+    display: block;
+    font-size: 27;
+    color: white;
+    text-align: justify;
+    top: 75px;
+    position: relative;
+}
+
+
+.zoom_imagem{
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+}
+
+.zoom_imagem img {
+    top: 75px;
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+
+    -moz-transition: all 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    
+}
+
+.zoom_imagem:hover img{
+    transform: scale(1.1);
+}
+
+
+#ultimo_texto{
+    color: white;
+    margin-top: 1250px;
+    padding: 30px;
+    text-align: center;
+}
