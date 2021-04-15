@@ -15,10 +15,6 @@ body {
     height: 100%;
 }
 
-#tudo {
-    min-height: 100%;
-    position: relative;
-}
 
 
 /* Header */
@@ -33,7 +29,7 @@ header {
 
 
 #div_menu {
-    background-color: rgba(90, 90, 92, 0.8);
+    background-color: rgba(90, 90, 92, 0.7);
     width: 250px;
     height: 100%;
     position: fixed;
@@ -49,14 +45,17 @@ header {
 }
 
 
+/* Imagem que abre o Menu */
+
 input[type="checkbox"] {
     display: none;
 }
 
+
 #img_menu_img {
     width: 30px;
 
-    transition: .3s;
+    transition: 0.3s;
 }
 
 label {
@@ -72,12 +71,12 @@ label:hover img {
     border-radius: 4px;
 }
 
-
 input[type="checkbox"]:checked~#div_menu {
     transform: translateX(250px);
 }
 
 
+/* Lista do Menu */
 .lista_menu {
     top: 62px;
     list-style: none;
@@ -85,12 +84,10 @@ input[type="checkbox"]:checked~#div_menu {
     width: 250px;
 }
 
-/* #header ul li */
 .item_menu {
     display: initial;
 }
 
-/* #header ul li a */
 .link_menu {
     font-family: Calibri;
     font-size: 23px;
@@ -101,24 +98,12 @@ input[type="checkbox"]:checked~#div_menu {
     transition: all .4s;
 }
 
-/*Efeito de Transição*/
 #nav_menu ul li a:hover {
-    background-color: rgb(202, 202, 202);
+    background-color: rgb(204, 204, 204);
     color: black;
     font-weight: bold;
     font-size: 25px;
 }
-
-
-#titulo_header {
-    font-size: 40px;
-    color: white;
-    top: 0px;
-    text-align: center;
-    position: relative;
-    padding: 3px;
-}
-
 
 #link_atual {
     font-family: Calibri;
@@ -130,22 +115,42 @@ input[type="checkbox"]:checked~#div_menu {
     transition: all .4s;
 }
 
+/* Título Header */
+#titulo_header {
+    font-size: 40px;
+    color: white;
+    top: 0px;
+    text-align: center;
+    position: relative;
+    padding: 3px;
+}
+
+
 
 
 /* Home */
 
 /* Imagem Superior */
+
 #img_inicial {
     top: 66px;
     position: relative;
     width: 100%;
+    height: 400px;
 }
 
 #img_inicial p {
-    padding-left: 10px;
+    padding-left: 7px;
     color: white;
     display: inline;
-    font-size: 14px;
+    font-size: 10px;
+}
+
+#img_inicial p a {
+    vertical-align: top;
+    text-decoration: none;
+    text-decoration: underline;
+    color: white;
 }
 
 #img_inicial img {
@@ -167,9 +172,9 @@ input[type="checkbox"]:checked~#div_menu {
 /* Textos */
 
 /* Texto Origem */
-#parte_inicial {
-    top: 700px;
-    height: 600px;
+#historia {
+    top: 1000px;
+    height: 1300px;
 }
 
 #titulo {
@@ -185,10 +190,11 @@ input[type="checkbox"]:checked~#div_menu {
 }
 
 
+/* Parte 1 */
 #flex_origem {
     display: flex;
-    height: 600px;
-    top: 10px;
+    height: 550px;
+    top: 110px;
     position: relative;
 }
 
@@ -198,7 +204,7 @@ input[type="checkbox"]:checked~#div_menu {
     color: white;
     font-size: 20px;
     position: relative;
-    top: 290px;
+    top: 190px;
     display: block-flex;
     text-align: left;
     text-align: justify;
@@ -208,17 +214,17 @@ input[type="checkbox"]:checked~#div_menu {
 
 
 #img_origem {
-    width: 400px;
-    height: 350px;
+    width: 450px;
+    height: 400px;
     display: flex;
     position: relative;
-    top: 280px;
+    top: 180px;
     text-align: right;
 }
 
 #img_origem img {
-    max-width: 450px;
-    max-height: 400px;
+    max-width: 400px;
+    max-height: 350px;
     width: auto;
     height: auto;
     transition: 0.3s;
@@ -228,11 +234,36 @@ input[type="checkbox"]:checked~#div_menu {
     transform: scale(1.1);
 }
 
+#origem_fonte {
+    text-align: right;
+    padding-right: 12%;
+    width: 100%;
+    display: inline-block;
+    height: 15px;
+    position: relative;
+    top: 100px;
+}
 
+#origem_fonte p {
+    height: 15px;
+    color: white;
+    display: inline;
+    font-size: 10px;
+    position: relative;
+}
+
+#origem_fonte p a {
+    text-decoration: none;
+    text-decoration: underline;
+    color: white;
+}
+
+
+/* Parte 2 */
 #flex_origem2 {
     display: flex;
-    height: 600px;
-    top: 70px;
+    height: 550px;
+    top: 80px;
     position: relative;
 }
 
@@ -241,7 +272,7 @@ input[type="checkbox"]:checked~#div_menu {
     color: white;
     font-size: 20px;
     position: relative;
-    top: 150px;
+    top: 130px;
     display: block-flex;
     text-align: left;
     text-align: justify;
@@ -255,7 +286,7 @@ input[type="checkbox"]:checked~#div_menu {
     height: 350px;
     display: flex;
     position: relative;
-    top: 110px;
+    top: 90px;
     text-align: right;
 }
 
@@ -272,13 +303,38 @@ input[type="checkbox"]:checked~#div_menu {
 }
 
 
+#origem2_fonte {
+    text-align: left;
+    padding-left: 11%;
+    width: 100%;
+    display: inline-block;
+    height: 15px;
+    position: relative;
+}
+
+#origem2_fonte p {
+    height: 15px;
+    color: white;
+    display: inline;
+    font-size: 10px;
+    position: relative;
+}
+
+#origem2_fonte p a {
+    text-decoration: none;
+    text-decoration: underline;
+    color: white;
+}
+
+
+
 /* Texto Poderes e Habilidades */
 
 #ph {
     font-size: 20px;
     width: 100%;
     color: white;
-    top: 80px;
+    
     position: relative;
     text-align: left;
     padding: 20px;
@@ -291,8 +347,8 @@ input[type="checkbox"]:checked~#div_menu {
 
 #flex_ph {
     display: flex;
-    height: 600px;
-    top: 70px;
+    height: 400px;
+    top: 50px;
     position: relative;
 }
 
@@ -311,7 +367,7 @@ input[type="checkbox"]:checked~#div_menu {
 }
 
 #img_ph img {
-    top: 10px;
+    top: 20px;
     position: relative;
     transition: .3s;
 }
@@ -321,13 +377,38 @@ input[type="checkbox"]:checked~#div_menu {
 }
 
 
+#ph_fonte {
+    text-align: right;
+    padding-right: 16%;
+    width: 100%;
+    display: inline-block;
+    height: 15px;
+    position: relative;
+    top: 25px;
+}
+
+#ph_fonte p {
+    height: 15px;
+    color: white;
+    display: inline;
+    font-size: 10px;
+    position: relative;
+}
+
+#ph_fonte p a {
+    text-decoration: none;
+    text-decoration: underline;
+    color: white;
+}
+
+
 /* Curiosidades */
 
 #curiosidades {
     font-size: 20px;
     width: 100%;
     color: white;
-    top: 40px;
+    top: 120px;
     position: relative;
     text-align: left;
     padding: 10px;
@@ -335,14 +416,13 @@ input[type="checkbox"]:checked~#div_menu {
 
 #curiosidades h1 {
     display: inline-block;
-    padding-left: 30px;
+    padding-left: 35px;
 }
 
 #flex_curiosidades {
     width: 100%;
     display: flex;
-    height: 600px;
-    top: 5px;
+    height: 440px;
     position: relative;
 }
 
@@ -361,13 +441,13 @@ input[type="checkbox"]:checked~#div_menu {
 }
 
 
-#img_curiosidades{
+#img_curiosidades {
     width: 25%;
-    height: 350px;
+    height: 400px;
     display: flex;
     top: 70px;
     position: relative;
-  
+
 }
 
 #img_curiosidades img {
@@ -383,12 +463,170 @@ input[type="checkbox"]:checked~#div_menu {
 }
 
 
+#curiosidades_fonte {
+    text-align: left;
+    padding-left: 11%;
+    width: 100%;
+    display: inline-block;
+    height: 15px;
+    position: relative;
+}
+
+#curiosidades_fonte p {
+    height: 15px;
+    color: white;
+    display: inline;
+    font-size: 10px;
+    position: relative;
+}
+
+#curiosidades_fonte p a {
+    text-decoration: none;
+    text-decoration: underline;
+    color: white;
+}
+
+
+
+/* Trajetória */
+
+#trajetoria {
+    font-size: 20px;
+    width: 100%;
+    height: 1300px;
+    color: white;
+    top: 250px;
+    position: relative;
+    text-align: left;
+    padding: 10px;
+}
+
+#trajetoria h1 {
+    display: inline-block;
+    padding-left: 70px;
+}
+
+
+#flex_trajetoria {
+    display: flex;
+    height: 450px;
+    position: relative;
+}
+
+
+#trajetoria_texto {
+    text-indent: 2em;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 70px;
+    display: block-flex;
+    text-align: left;
+    text-align: justify;
+    width: 42%;
+    height: 400px;
+}
+
+
+#trajetoria_img {
+    width: 500px;
+    height: 450px;
+    display: flex;
+    position: relative;
+    text-align: right;
+    top: 20px;
+}
+
+#trajetoria_img img {
+    max-width: 500px;
+    max-height: 450px;
+    width: auto;
+    height: auto;
+    transition: 0.3s;
+}
+
+#trajetoria_img:hover img {
+    transform: scale(1.1);
+}
+
+
+#trajetoria_fonte {
+    text-align: right;
+    padding-right: 10%;
+    width: 100%;
+    display: inline-block;
+    height: 15px;
+    position: relative;
+}
+
+#trajetoria_fonte p {
+    height: 15px;
+    color: white;
+    display: inline;
+    font-size: 10px;
+    position: relative;
+}
+
+#trajetoria_fonte p a {
+    text-decoration: none;
+    text-decoration: underline;
+    color: white;
+}
+
+
+/* Lista de Filmes */
+#div_ul_trajetoria {
+    width: 100%;
+    top: 200px;
+}
+
+#div_ul_trajetoria p{
+    font-size: 32px;
+    font-weight: bold;
+    width: 100%;
+    color: white;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    top: 100px;
+}
+
+#trajetoria_filmes{
+    text-align: center;
+}
+
+#trajetoria_filmes li {
+    top: 150px;
+    height: 300px;
+    width: 200px;
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#trajetoria_filmes img {
+    max-height: 300px;
+    max-width: 250px;
+    height: auto;
+    width: auto;
+    display: inline-block;
+    transition: .3s;
+}
+
+#div_ul_trajetoria li:hover img {
+    transform: scale(1.1);
+}
+
+
 
 /*Rodapé*/
 
 footer {
+    top: 200px;
     width: 100%;
     color: white;
     text-align: center;
     padding: 20px;
+    position: relative;
 }

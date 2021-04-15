@@ -6,7 +6,7 @@
 }
 
 html {
-    height: 1250px;
+    height: 100%;
     overflow-x: hidden;
 }
 
@@ -15,10 +15,6 @@ body {
     height: 100%;
 }
 
-#tudo {
-    min-height: 100%;
-    position: relative;
-}
 
 
 /* Header */
@@ -49,17 +45,15 @@ header {
 }
 
 
+/* Imagem que abre Menu */
 input[type="checkbox"] {
     display: none;
 }
 
-
 #img_menu_img {
     width: 30px;
-
     transition: 0.3s;
 }
-
 
 label {
     top: 9px;
@@ -74,12 +68,12 @@ label:hover img {
     border-radius: 4px;
 }
 
-
 input[type="checkbox"]:checked~#div_menu {
     transform: translateX(250px);
 }
 
 
+/* Lista do Menu */
 .lista_menu {
     top: 62px;
     list-style: none;
@@ -87,12 +81,10 @@ input[type="checkbox"]:checked~#div_menu {
     width: 250px;
 }
 
-/* #header ul li */
 .item_menu {
     display: initial;
 }
 
-/* #header ul li a */
 .link_menu {
     font-family: Calibri;
     font-size: 23px;
@@ -103,23 +95,11 @@ input[type="checkbox"]:checked~#div_menu {
     transition: all .4s;
 }
 
-
-/*Efeito de Transição*/
 #nav_menu ul li a:hover {
     background-color: rgb(204, 204, 204);
     color: black;
     font-weight: bold;
     font-size: 25px;
-}
-
-
-#titulo_header {
-    font-size: 40px;
-    color: white;
-    top: 0px;
-    text-align: center;
-    position: relative;
-    padding: 3px;
 }
 
 
@@ -131,6 +111,17 @@ input[type="checkbox"]:checked~#div_menu {
     display: block;
     text-decoration: underline;
     transition: all .4s;
+}
+
+
+/* Título Header */
+#titulo_header {
+    font-size: 40px;
+    color: white;
+    top: 0px;
+    text-align: center;
+    position: relative;
+    padding: 3px;
 }
 
 
@@ -159,14 +150,12 @@ input[type="checkbox"]:checked~#div_menu {
     display: initial;
 }
 
-
 .link_menu {
     font-family: Calibri;
     font-size: 20px;
     color: white;
     text-decoration: none;
     font-weight: bold;
-
     padding: 20px;
     padding-left: 30px;
     padding-right: 30px;
@@ -202,6 +191,7 @@ input[type="checkbox"]:checked~#div_menu {
 
 /* Home */
 
+/* Imagem Superior */
 #img_inicial {
     top: 66px;
     position: relative;
@@ -214,7 +204,6 @@ input[type="checkbox"]:checked~#div_menu {
     border: 5px solid black;
     object-fit: cover;
     object-position: center;
-
     transition: 0.3s;
 }
 
@@ -223,9 +212,11 @@ input[type="checkbox"]:checked~#div_menu {
     border: 0px solid black;
 }
 
+
+/* Textos */
 #parte_inicial {
     top: 700px;
-    height: 600px;
+    height: 900px;
 }
 
 #titulo {
@@ -241,7 +232,7 @@ input[type="checkbox"]:checked~#div_menu {
 
 #flex_descricao {
     display: flex;
-    height: 600px;
+    height: 850px;
 }
 
 .descricao {
@@ -282,9 +273,13 @@ input[type="checkbox"]:checked~#div_menu {
     transform: scale(1.1);
 }
 
+
+/* Rodapé */
+
 footer {
     width: 100%;
     color: white;
     text-align: center;
     padding: 20px;
+    position: relative;
 }
