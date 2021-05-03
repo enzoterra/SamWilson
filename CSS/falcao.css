@@ -91,16 +91,17 @@ input[type="checkbox"]:checked~#div_menu {
     width: 250px;
 }
 
-.lista_quemSomos{
-    transition: all .4s;
-    display: none;
+#lista_quemSomos{
+    list-style:decimal;
 }
-
 
 .item_menu {
     display: initial;
 }
 
+.item_menu_quemSomos{
+    display: initial;
+}
 
 .link_menu {
     font-family: Calibri;
@@ -116,14 +117,12 @@ input[type="checkbox"]:checked~#div_menu {
     font-family: Calibri;
     font-size: 18px;
     color: #FFFFFF;
-    padding: 10px 40px;
+    padding: 10px 15px;
     display: block;
     text-decoration: none;
     transition: all .4s;
 }
 
-
-/*Efeito dos Itens*/
 #nav_menu ul li a:hover {
     background-color: rgb(204, 204, 204);
     color: #000000;
@@ -141,22 +140,10 @@ input[type="checkbox"]:checked~#div_menu {
     transition: all .4s;
 }
 
+#nav_menu ul li a #quemSomos:hover .item_menu_quemSomos{
+   display: block;
 
-/*Efeito do Menu do Quem Somos*/
-#nav_menu ul #item_quemSomos:hover .lista_quemSomos{
-    display: initial;
-    transition: .4s;
 }
-
-#nav_menu ul #item_quemSomos:hover .link_menu_quemSomos{
-    background-color: rgb(204, 204, 204);
-    color: #000000;
-}
-
-#item_quemSomos ul li a:hover{
-    font-size: 21px;
-}
-
 
 /* Título Header */
 #titulo_header {
