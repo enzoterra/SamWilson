@@ -164,70 +164,7 @@ input[type="checkbox"]:checked~#div_menu {
     color: #FFFFFF;
     top: 0px;
     text-align: center;
+    vertical-align: middle;
     position: relative;
     padding: 3px;
 }
-
-
-
-
-/* 1 Versão do Header
-
-#cabecalho {
-    background-color: rgb(150, 18, 18);
-    height: 65px;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    display: block;
-}
-
-#nav_menu {
-    height: 55px;
-}
-
-#ul_menu {
-    list-style: none;
-    padding-top: 20px;
-}
-
-.item_menu {
-    display: initial;
-}
-
-.link_menu {
-    font-family: Calibri;
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    position: relative;
-    display: inline;
-    transition: all 0.3s;
-}
-
-#nav_menu ul li a:hover {
-    background-color: rgb(202, 202, 202);
-    color: black;
-    font-weight: bold;
-
-}
-
-#link_atual {
-    font-family: Calibri;
-    font-size: 25px;
-    color: rgb(17, 17, 17);
-    text-decoration: none;
-    font-weight: bold;
-
-    padding: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    position: relative;
-    display: inline;
-    transition: all 0.3s;
-}
-*/
