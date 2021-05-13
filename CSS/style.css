@@ -163,6 +163,7 @@ input[type="checkbox"]:checked~#div_menu {
 #div_titulo {
     height: 100%;   
     width: 100%;
+    position: relative;
 }
 
 #titulo_header {
