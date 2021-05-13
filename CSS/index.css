@@ -73,16 +73,18 @@ Branco: #FFFFFF
 }
 
 #img_descricao {
-    max-width: 65vw;
-    height: 65vh;
+    max-width: 60vw;
+    max-height: 65vh;
     display: flex;
     position: relative;
     top: 280px;
 }
 
 #img_descricao img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 55%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
     transition: 0.3s;
 }
 

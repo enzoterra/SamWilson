@@ -159,6 +159,12 @@ input[type="checkbox"]:checked~#div_menu {
 
 
 /* Título Header */
+
+#div_titulo {
+    height: 100%;   
+    width: 100%;
+}
+
 #titulo_header {
     font-size: 40px;
     color: #FFFFFF;
