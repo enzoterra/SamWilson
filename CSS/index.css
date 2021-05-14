@@ -35,12 +35,12 @@ Branco: #FFFFFF
 /* Textos */
 #parte_inicial {
     top: 700px;
-    height: 900px;
+    height: max(1000px, 100vh);
 }
 
 #titulo {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 35px;
+    font-size: max(25px, 3vw);
     color: #FFFFFF;
     top: 73vh;
     width: 100%;
@@ -58,12 +58,14 @@ Branco: #FFFFFF
 .descricao {
     text-indent: 2em;
     color: #FFFFFF;
-    font-size: calc(0.8em + 0.6vw);
+    font-size: max(15px, 1.5vw);
     position: relative;
-    top: 290px;
+    top: 45vh;
     display: block-flex;
-    width: 42%;
+    width: 45%;
     height: 400px;
+    text-align: justify;
+    padding-right: 5vh;
 }
 
 .descricao ul {
@@ -74,18 +76,19 @@ Branco: #FFFFFF
 
 #img_descricao {
     max-width: 60vw;
-    max-height: 65vh;
+    max-height: 60vh;
     display: flex;
     position: relative;
-    top: 280px;
+    top: 45vh;
 }
 
 #img_descricao img {
-    max-width: 55%;
+    max-width: 50%;
     max-height: 90%;
     width: auto;
     height: auto;
     transition: 0.3s;
+    object-fit: contain;
 }
 
 #img_descricao:hover img {

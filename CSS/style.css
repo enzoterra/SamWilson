@@ -140,6 +140,16 @@ input[type="checkbox"]:checked~#div_menu {
     transition: all .4s;
 }
 
+#link_atual_quemSomos {
+    font-family: Calibri;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 10px 40px;
+    display: block;
+    text-decoration: underline;
+    transition: all .4s;
+}
+
 
 /*Efeito do Menu do Quem Somos*/
 #nav_menu ul #item_quemSomos:hover .lista_quemSomos{
