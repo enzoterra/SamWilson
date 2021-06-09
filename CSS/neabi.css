@@ -64,6 +64,10 @@ h3 {
     transition: 0.3s;
 }
 
+.flex_img ul {
+    list-style: none;
+}
+
 .flex_img ul li {
     padding-bottom: 30vh;
 }

@@ -61,9 +61,11 @@
 
 #div_fotos {
     width: 100%;
+    display: flex;
     position: relative;
     text-align: center;
     top: 20vh;
+    flex-direction: column;
 }
 
 #div_fotos h2 {
@@ -71,8 +73,6 @@
 }
 
 #img_descricao_fotos {
-    max-width: 80vw;
-    max-height: 80vh;
     display: flex;
     position: relative;
     top: 10vh;
@@ -102,11 +102,10 @@ h2 {
 }
 
 #div_nomes {
-    width: 90%;
     position: relative;
     color: #FFFFFF;
-    top: 32vh;
-    text-align: center;
+    top: 15vh;
+    width: 100%;
 }
 
 #flex_nomes {
@@ -116,7 +115,6 @@ h2 {
 }
 
 #flex_nomes h2{
-    width: 50%;
     text-align: center;
 }
 
