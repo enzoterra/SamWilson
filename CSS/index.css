@@ -33,7 +33,7 @@ Branco: #FFFFFF
 
 
 /* Textos */
-#main {
+main {
     top: 700px;
     height: 140vh/*max(900px, 100vh)*/;
 }

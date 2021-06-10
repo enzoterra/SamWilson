@@ -1,0 +1,104 @@
+main {
+    width: 100%;
+    margin: 0 auto;
+    top: 100px;
+    position: absolute;
+}
+
+#tudo {
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#titulo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: max(35px, 3vw);
+    color: #FFFFFF;
+    top: 10px;
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    display: inline;
+}
+
+
+#div_form {
+    width: 940px;
+    margin: 0 auto;
+    top: 100px;
+    position: relative;
+}
+
+
+form {
+    margin: 40px 0;
+    color: #FFFFFF;
+}
+
+form label, form p {
+    display: block;
+    font-size: 20px;
+    margin: 0 10px;
+    top: 30px;
+    position: relative;
+}
+
+.input_padrao {
+    display: block;
+    margin: 10px 0 20px 0;
+    padding: 10px 25px;
+    width: 50%;
+    top: 25px;
+    position: relative;
+}
+
+.checkbox {
+    margin: 20px 10px;
+}
+
+select {
+    top: 40px;
+    position: relative;
+    left: 10px;
+}
+
+
+#div_enviar {
+    width: 100%;
+    text-align: center;
+    top: 200px;
+    position: relative;
+}
+
+#enviar {
+    width: 40%;
+    padding: 15px 0;
+    position: relative;
+    text-align: center;
+    background-color: rgb(219, 8, 8);
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 7px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+#enviar:hover {
+    background-color: rgb(156, 5, 5);
+    transform: scale(1.1);
+}
+
+
+/* Rodapé */
+
+footer {
+    top: 220%;
+    width: 100%;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+}

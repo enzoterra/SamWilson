@@ -53,31 +53,30 @@ header {
 
 /* Imagem que abre o Menu */
 
-input[type="checkbox"] {
+header input[type="checkbox"] {
     display: none;
 }
 
 
 #img_menu_img {
     width: 30px;
-
     transition: 0.3s;
 }
 
-label {
+header label {
     top: 9px;
     padding: 8px;
     position: fixed;
     z-index: 2;
 }
 
-label:hover img {
+header label:hover img {
     transform: scale(1.01);
     background-color: rgba(160, 160, 160, 0.3);
     border-radius: 4px;
 }
 
-input[type="checkbox"]:checked~#div_menu {
+header input[type="checkbox"]:checked~#div_menu {
     transform: translateX(250px);
 }
 

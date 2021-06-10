@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professores | Sam Wilson</title>
+    <title>Contato | Sam Wilson</title>
     <link rel="shortcut icon" href="Imagens/Icones/simbolo2.ico" />
-    <link rel="stylesheet" href="CSS/contato.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/contato.css">
 </head>
 
 <body>
 
     <!-- Menu -->
     <header>
+
         <input type="checkbox" id="img_menu">
         <label for="img_menu">
             <img id="img_menu_img" src="Imagens/menu_img_branco.png">
@@ -29,13 +30,13 @@
                         <ul class=lista_quemSomos>
                             <li class=item_menu_quemSomos><a class=link_menu_quemSomos href="neabi.html">• Neabi</a>
                             </li>
-                            <li class=item_menu_quemSomos><a class=link_menu_quemSomos id="link_atual_quemSomos"
-                                    href="professores.html">• Professores</a></li>
+                            <li class=item_menu_quemSomos><a class=link_menu_quemSomos href="professores.html">•
+                                    Professores</a></li>
                             <li class=item_menu_quemSomos><a class=link_menu_quemSomos href="estudantes.html">•
                                     Estudantes</a></li>
                         </ul>
                     </li>
-                    <li class=item_menu><a class=link_menu href="#">Contato</a></li>
+                    <li class=item_menu><a class=link_menu id="link_atual" href="#">Contato</a></li>
 
                 </ul>
             </nav>
@@ -46,20 +47,74 @@
     </header>
 
 
-    <!-- Parte dos Textos -->
-    <div id="main">
-        <form>
-            
-        </form>
-    </div>
+    <!-- Parte Principal -->
+    <main>
+
+        <div id="tudo">
+
+            <h1 id="titulo">Contato</h1>
+
+            <div id="div_form">
+                <form action="/DadosDoSite.xlsx" method="POST">
+
+                    <label for="nomesobrenome">Nome e Sobrenome</label>
+                    <input class="input_padrao" type="text" id="nomesobrenome" required placeholder=" João Barros">
+
+                    <label for="email">Email</label>
+                    <input class="input_padrao" type="email" id="email" required placeholder=" email@dominio.com">
+
+                    <label for="telefone">Telefone</label>
+                    <input class="input_padrao" type="tel" id="telefone" required placeholder=" (00) 0000-0000">
+
+                    <label for="mensagens">Mensagens</label>
+                    <textarea class="input_padrao" id="mensagens" cols="70" rows="10" required></textarea>
+
+                    <br>
+                    <div>
+                        <p> Como prefere nosso contato? </p>
+                        <label for="radio_email"><input type="radio" name="contato" value="email" id="radio_email">
+                            Email
+                        </label>
+
+                        <label for="radio_telefone"><input type="radio" name="contato" value="telefone"
+                                id="radio_telefone">
+                            Telefone </label>
+
+                        <label for="radio_whatsapp"><input type="radio" name="contato" value="whatsapp"
+                                id="radio_whatsapp" checked> Whatsapp </label>
+
+                    </div>
+
+                    <br>
+                    <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas novidades por
+                        email?</label>
+
+                    <br>
+                    <div>
+                        <p>Em qual período prefere nosso contato?</p>
+                        <select>
+                            <option>Manhã</option>
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                        </select>
+                    </div>
+
+                </form>
+            </div>
+
+            <div id="div_enviar">
+                <input id="enviar" type="submit" value="Enviar Formulário">
+            </div>
+
+        </div>
+    </main>
 
 
     <!-- Rodapé -->
-    <footer id="texto_final">
+    <footer>
         <h4>Feito por Enzo Terra e Daniel Greffe</h4>
     </footer>
 
 </body>
-
 
 </html>
