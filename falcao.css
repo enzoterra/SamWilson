@@ -1,0 +1,529 @@
+/* Paleta de Cores
+Cor do Fundo (Preto Claro): #141212
+Preto: #000000
+Vermelho: #961212
+Cinza: #5C5A5A
+Branco: #FFFFFF
+*/
+
+
+/* Home */
+
+/* Imagem Superior */
+#img_inicial {
+    top: 66px;
+    position: relative;
+    width: 100%;
+    /* height: 400px; */
+}
+
+#img_inicial p {
+    padding-left: 7px;
+    color: #FFFFFF;
+    display: inline;
+    font-size: 10px;
+}
+
+#img_inicial p a {
+    vertical-align: top;
+    text-decoration: none;
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+#img_inicial img {
+    height: 52vh;
+    width: 100%;
+    border: 5px solid #000000;
+    object-fit: cover;
+    object-position: top;
+
+    transition: 0.3s;
+}
+
+#img_inicial:hover img {
+    transform: scale(1.015);
+    border: 0px solid #000000;
+}
+
+
+/* Textos */
+
+/* Texto Origem */
+#historia {
+    top: 900px;
+    height: 1300px;
+}
+
+#titulo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: max(20px, 3vw);
+    color: #FFFFFF;
+    top: 40vh;
+    width: 100%;
+    text-align: left;
+    margin-left: 100px;
+    position: relative;
+    display: inline;
+}
+
+
+/* Parte 1 */
+#flex_origem {
+    display: flex;
+    height: 600px;
+    top: 110px;
+    position: relative;
+}
+
+
+#origem {
+    text-indent: 2em;
+    color: #FFFFFF;
+    font-size: max(12px, 1.4vw);
+    position: relative;
+    top: 190px;
+    display: block-flex;
+    text-align: left;
+    text-align: justify;
+    width: 42%;
+    height: 400px;
+}
+
+
+#img_origem {
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    position: relative;
+    top: 180px;
+    text-align: right;
+}
+
+#img_origem img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    transition: 0.3s;
+    object-fit: contain;
+
+}
+
+#img_origem:hover img {
+    transform: scale(1.1);
+}
+
+#origem_fonte {
+    text-align: right;
+    padding-right: 2%;
+    width: 100%;
+    display: inline-block;
+    height: 15px;
+    position: relative;
+    top: 13vw;
+}
+
+#origem_fonte p {
+    height: 15px;
+    color: #FFFFFF;
+    display: inline;
+    font-size: min(10px, 1vw);
+    position: relative;
+}
+
+#origem_fonte p a {
+    text-decoration: none;
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+
+/* Parte 2 */
+#flex_origem2 {
+    display: flex;
+    height: 550px;
+    top: 50px;
+    position: relative;
+}
+
+#origem2 {
+    text-indent: 2em;
+    color: #FFFFFF;
+    font-size: max(12px, 1.4vw);
+    position: relative;
+    top: 130px;
+    display: block-flex;
+    text-align: left;
+    text-align: justify;
+    width: 42%;
+    height: 400px;
+}
+
+
+#img_origem2 {
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    position: relative;
+    top: 90px;
+    text-align: right;
+}
+
+#img_origem2 img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    transition: 0.3s;
+    object-fit: contain;
+}
+
+#img_origem2:hover img {
+    transform: scale(1.1);
+}
+
+
+#origem2_fonte {
+    text-align: left;
+    padding-left: 1%;
+    width: 100%;
+    display: inline-block;
+    height: 15px;
+    position: relative;
+    top: 7vw;
+}
+
+#origem2_fonte p {
+    height: 15px;
+    color: #FFFFFF;
+    display: inline;
+    font-size: min(10px, 1vw);
+    position: relative;
+}
+
+#origem2_fonte p a {
+    text-decoration: none;
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+
+
+/* Texto Poderes e Habilidades */
+
+#ph {
+    font-size: max(12px, 1.4vw);
+    width: 100%;
+    color: #FFFFFF;
+    
+    position: relative;
+    text-align: left;
+    padding: 20px;
+}
+
+#ph h1 {
+    display: inline-block;
+    padding-left: 30px;
+}
+
+#flex_ph {
+    display: flex;
+    height: 400px;
+    top: 50px;
+    position: relative;
+}
+
+#ph ul {
+    text-align: left;
+    padding: 10px;
+    display: block;
+    top: 10px;
+    position: relative;
+    width: 40%;
+    text-align: justify;
+}
+
+#ph ul li {
+    padding: 10px;
+}
+
+#img_ph {
+    width: 40vw;
+    height: 50vh;
+}
+
+#img_ph img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    top: 20px;
+    position: relative;
+    transition: .3s;
+    object-fit: contain;
+}
+
+#img_ph:hover img {
+    transform: scale(1.1);
+}
+
+
+#ph_fonte {
+    text-align: right;
+    padding-right: 2%;
+    width: 100%;
+    display: inline-block;
+    height: 15px;
+    position: relative;
+    top: 2vh;
+}
+
+#ph_fonte p {
+    height: 15px;
+    color: #FFFFFF;
+    display: inline;
+    font-size: min(10px, 1vw);
+    position: relative;
+}
+
+#ph_fonte p a {
+    text-decoration: none;
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+
+/* Curiosidades */
+
+#curiosidades {
+    font-size: max(12px, 1.4vw);
+    width: 100%;
+    color: #FFFFFF;
+    top: 120px;
+    position: relative;
+    text-align: left;
+    padding: 10px;
+}
+
+#curiosidades h1 {
+    display: inline-block;
+    padding-left: 35px;
+}
+
+#flex_curiosidades {
+    width: 100%;
+    display: flex;
+    height: 440px;
+    position: relative;
+}
+
+#flex_curiosidades ul {
+    text-align: left;
+    width: 50%;
+    padding: 10px;
+    display: block;
+    top: 80px;
+    position: relative;
+    text-align: justify;
+}
+
+#flex_curiosidades ul li {
+    padding: 10px;
+}
+
+
+#img_curiosidades {
+    width: 30vw;
+    height: 55vh;
+    display: flex;
+    top: 70px;
+    position: relative;
+
+}
+
+#img_curiosidades img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    transition: 0.3s;
+    object-fit: contain;
+}
+
+#img_curiosidades:hover img {
+    transform: scale(1.1);
+}
+
+
+#curiosidades_fonte {
+    text-align: left;
+    left: 6vw;
+    top: 12vh;
+    width: 100%;
+    display: inline-block;
+    height: 15px;
+    position: relative;
+}
+
+#curiosidades_fonte p {
+    height: 15px;
+    color: #FFFFFF;
+    display: inline;
+    font-size: min(10px, 1vw);
+    position: relative;
+}
+
+#curiosidades_fonte p a {
+    text-decoration: none;
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+
+
+/* Trajetória */
+
+#trajetoria {
+    font-size: max(12px, 1.4vw);
+    width: 100%;
+    height: 1300px;
+    color: #FFFFFF;
+    top: 250px;
+    position: relative;
+    text-align: left;
+    padding: 10px;
+}
+
+#trajetoria h1 {
+    display: inline-block;
+    padding-left: 70px;
+}
+
+
+#flex_trajetoria {
+    display: flex;
+    height: 450px;
+    position: relative;
+}
+
+
+#trajetoria_texto {
+    text-indent: 2em;
+    color: #FFFFFF;
+    font-size: max(12px, 1.4vw);
+    position: relative;
+    top: 70px;
+    display: block-flex;
+    text-align: left;
+    text-align: justify;
+    width: 40vw;
+    height: 400px;
+}
+
+
+#trajetoria_img {
+    width:  30vw;
+    height: 50vh;
+    display: flex;
+    position: relative;
+    text-align: right;
+    top: 12vh;
+}
+
+#trajetoria_img img {
+    width: 100%;
+    height: 100%;
+    width: auto;
+    height: auto;
+    transition: 0.3s;
+    object-fit: contain;
+}
+
+#trajetoria_img:hover img {
+    transform: scale(1.1);
+}
+
+
+#trajetoria_fonte {
+    text-align: right;
+    padding-right: 10%;
+    width: 100%;
+    display: inline-block;
+    height: 15px;
+    position: relative;
+    top: 15vh;
+}
+
+#trajetoria_fonte p {
+    height: 15px;
+    color: #FFFFFF;
+    display: inline;
+    font-size: min(10px, 1vw);
+    position: relative;
+}
+
+#trajetoria_fonte p a {
+    text-decoration: none;
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+
+/* Lista de Filmes */
+#div_ul_trajetoria {
+    width: 100%;
+    top: 200px;
+}
+
+#div_ul_trajetoria p{
+    font-size: 32px;
+    font-weight: bold;
+    width: 100%;
+    color: #FFFFFF;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    top: 100px;
+}
+
+#trajetoria_filmes{
+    text-align: center;
+}
+
+#trajetoria_filmes li {
+    top: 150px;
+    height: 14%;
+    width: 13vw;
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#trajetoria_filmes img {
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    display: inline-block;
+    transition: .3s;
+    position: relative;
+}
+
+#div_ul_trajetoria li:hover img {
+    transform: scale(1.1);
+}
+
+
+
+/*Rodapé*/
+
+footer {
+    top: 200px;
+    width: 100%;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
