@@ -47,10 +47,11 @@ form label, form p {
 .input_padrao {
     display: block;
     margin: 10px 0 20px 0;
-    padding: 10px 25px;
+    padding: 8px 25px;
     width: 50%;
-    top: 25px;
+    top: 30px;
     position: relative;
+    font-size: 17px;
 }
 
 .checkbox {
@@ -95,7 +96,7 @@ select {
 /* Rodapé */
 
 footer {
-    top: 220%;
+    top: 250%;
     width: 100%;
     color: #FFFFFF;
     text-align: center;

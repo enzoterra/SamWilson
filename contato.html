@@ -55,21 +55,29 @@
             <h1 id="titulo">Contato</h1>
 
             <div id="div_form">
-                <form action="/DadosDoSite.xlsx" method="POST">
+    
+                <form action="receber_form.php" method="POST">
 
                     <label for="nomesobrenome">Nome e Sobrenome</label>
-                    <input class="input_padrao" type="text" id="nomesobrenome" required placeholder=" João Barros">
-
-                    <label for="email">Email</label>
-                    <input class="input_padrao" type="email" id="email" required placeholder=" email@dominio.com">
-
-                    <label for="telefone">Telefone</label>
-                    <input class="input_padrao" type="tel" id="telefone" required placeholder=" (00) 0000-0000">
-
-                    <label for="mensagens">Mensagens</label>
-                    <textarea class="input_padrao" id="mensagens" cols="70" rows="10" required></textarea>
+                    <input class="input_padrao" type="text" id="nomesobrenome" name="nome" required
+                        placeholder="Daniel Cardoso">
 
                     <br>
+                    <label for="email">Email</label>
+                    <input class="input_padrao" type="email" id="email" name="email" required
+                        placeholder=" email@dominio.com">
+
+                    <br>
+                    <label for="telefone">Telefone</label>
+                    <input class="input_padrao" type="tel" id="telefone" name="telefone" required
+                        placeholder=" (00) 0000-0000">
+
+                    <br>
+                    <label for="mensagens">Mensagens</label>
+                    <textarea class="input_padrao" id="mensagens" name="mensagens" cols="70" rows="10"
+                        required></textarea>
+
+                    <br><br>
                     <div>
                         <p> Como prefere nosso contato? </p>
                         <label for="radio_email"><input type="radio" name="contato" value="email" id="radio_email">
@@ -85,11 +93,11 @@
 
                     </div>
 
-                    <br>
+                    <br><br>
                     <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas novidades por
                         email?</label>
 
-                    <br>
+                    <br><br>
                     <div>
                         <p>Em qual período prefere nosso contato?</p>
                         <select>
@@ -99,21 +107,22 @@
                         </select>
                     </div>
 
-                </form>
-            </div>
+                    <div id="div_enviar">
+                        <input id="enviar" type="submit" name="acao" value="Enviar Formulário">
+                    </div>
 
-            <div id="div_enviar">
-                <input id="enviar" type="submit" value="Enviar Formulário">
+                </form>
+                
             </div>
 
         </div>
     </main>
 
-
     <!-- Rodapé -->
     <footer>
         <h4>Feito por Enzo Terra e Daniel Greffe</h4>
     </footer>
+
 
 </body>
 
