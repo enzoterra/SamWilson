@@ -1,5 +1,5 @@
 /* Textos */
-#parte_inicial {
+#main {
     top: 700px;
     height: max(2400px, 340vh);
 }
@@ -62,6 +62,10 @@ h3 {
     width: auto;
     height: auto;
     transition: 0.3s;
+}
+
+.flex_img ul {
+    list-style: none;
 }
 
 .flex_img ul li {

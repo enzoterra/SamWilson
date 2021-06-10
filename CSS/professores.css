@@ -1,6 +1,6 @@
 /* Textos */
 
-#parte_inicial {
+#main {
     top: 700px;
     height: max(2000px, 300vh);
 }
@@ -156,6 +156,10 @@ p {
 }
 
 #img_descricao:hover img {
+    transform: scale(1.1);
+}
+
+#img_descricao_edi:hover img {
     transform: scale(1.1);
 }
 

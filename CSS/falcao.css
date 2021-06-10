@@ -14,7 +14,7 @@ Branco: #FFFFFF
     top: 66px;
     position: relative;
     width: 100%;
-    height: 400px;
+    /* height: 400px; */
 }
 
 #img_inicial p {
@@ -32,7 +32,7 @@ Branco: #FFFFFF
 }
 
 #img_inicial img {
-    height: 400px;
+    height: 52vh;
     width: 100%;
     border: 5px solid #000000;
     object-fit: cover;
@@ -51,19 +51,19 @@ Branco: #FFFFFF
 
 /* Texto Origem */
 #historia {
-    top: 1000px;
+    top: 900px;
     height: 1300px;
 }
 
 #titulo {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: max(15px, 3vw);
+    font-size: max(20px, 3vw);
     color: #FFFFFF;
-    top: 590px;
+    top: 40vh;
     width: 100%;
     text-align: left;
     margin-left: 100px;
-    position: absolute;
+    position: relative;
     display: inline;
 }
 
@@ -92,8 +92,8 @@ Branco: #FFFFFF
 
 
 #img_origem {
-    width: 450px;
-    height: 400px;
+    width: 40vw;
+    height: 50vh;
     display: flex;
     position: relative;
     top: 180px;
@@ -101,11 +101,13 @@ Branco: #FFFFFF
 }
 
 #img_origem img {
-    max-width: 400px;
-    max-height: 350px;
+    max-width: 100%;
+    max-height: 100%;
     width: auto;
     height: auto;
     transition: 0.3s;
+    object-fit: contain;
+
 }
 
 #img_origem:hover img {
@@ -114,19 +116,19 @@ Branco: #FFFFFF
 
 #origem_fonte {
     text-align: right;
-    padding-right: 12%;
+    padding-right: 2%;
     width: 100%;
     display: inline-block;
     height: 15px;
     position: relative;
-    top: 50px;
+    top: 13vw;
 }
 
 #origem_fonte p {
     height: 15px;
     color: #FFFFFF;
     display: inline;
-    font-size: 10px;
+    font-size: min(10px, 1vw);
     position: relative;
 }
 
@@ -160,8 +162,8 @@ Branco: #FFFFFF
 
 
 #img_origem2 {
-    width: 400px;
-    height: 350px;
+    width: 40vw;
+    height: 50vh;
     display: flex;
     position: relative;
     top: 90px;
@@ -169,11 +171,12 @@ Branco: #FFFFFF
 }
 
 #img_origem2 img {
-    max-width: 400px;
-    max-height: 350px;
+    max-width: 100%;
+    max-height: 100%;
     width: auto;
     height: auto;
     transition: 0.3s;
+    object-fit: contain;
 }
 
 #img_origem2:hover img {
@@ -183,19 +186,19 @@ Branco: #FFFFFF
 
 #origem2_fonte {
     text-align: left;
-    padding-left: 11%;
+    padding-left: 1%;
     width: 100%;
     display: inline-block;
     height: 15px;
     position: relative;
-    top: -40px;
+    top: 7vw;
 }
 
 #origem2_fonte p {
     height: 15px;
     color: #FFFFFF;
     display: inline;
-    font-size: 10px;
+    font-size: min(10px, 1vw);
     position: relative;
 }
 
@@ -245,10 +248,20 @@ Branco: #FFFFFF
     padding: 10px;
 }
 
+#img_ph {
+    width: 40vw;
+    height: 50vh;
+}
+
 #img_ph img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
     top: 20px;
     position: relative;
     transition: .3s;
+    object-fit: contain;
 }
 
 #img_ph:hover img {
@@ -258,19 +271,19 @@ Branco: #FFFFFF
 
 #ph_fonte {
     text-align: right;
-    padding-right: 16%;
+    padding-right: 2%;
     width: 100%;
     display: inline-block;
     height: 15px;
     position: relative;
-    top: 25px;
+    top: 2vh;
 }
 
 #ph_fonte p {
     height: 15px;
     color: #FFFFFF;
     display: inline;
-    font-size: 10px;
+    font-size: min(10px, 1vw);
     position: relative;
 }
 
@@ -321,8 +334,8 @@ Branco: #FFFFFF
 
 
 #img_curiosidades {
-    width: 25%;
-    height: 400px;
+    width: 30vw;
+    height: 55vh;
     display: flex;
     top: 70px;
     position: relative;
@@ -330,11 +343,12 @@ Branco: #FFFFFF
 }
 
 #img_curiosidades img {
-    max-width: 400px;
-    max-height: 350px;
+    max-width: 100%;
+    max-height: 100%;
     width: auto;
     height: auto;
     transition: 0.3s;
+    object-fit: contain;
 }
 
 #img_curiosidades:hover img {
@@ -344,7 +358,8 @@ Branco: #FFFFFF
 
 #curiosidades_fonte {
     text-align: left;
-    padding-left: 10%;
+    left: 6vw;
+    top: 12vh;
     width: 100%;
     display: inline-block;
     height: 15px;
@@ -355,7 +370,7 @@ Branco: #FFFFFF
     height: 15px;
     color: #FFFFFF;
     display: inline;
-    font-size: 10px;
+    font-size: min(10px, 1vw);
     position: relative;
 }
 
@@ -402,26 +417,27 @@ Branco: #FFFFFF
     display: block-flex;
     text-align: left;
     text-align: justify;
-    width: max(42%, 330px);
+    width: 40vw;
     height: 400px;
 }
 
 
 #trajetoria_img {
-    width: min(700px, 50vw);
-    height: 450px;
+    width:  30vw;
+    height: 50vh;
     display: flex;
     position: relative;
     text-align: right;
-    top: 20px;
+    top: 12vh;
 }
 
 #trajetoria_img img {
-    width: min(700px, 50vw);
-    height: min(700px, 50vw);
+    width: 100%;
+    height: 100%;
     width: auto;
     height: auto;
     transition: 0.3s;
+    object-fit: contain;
 }
 
 #trajetoria_img:hover img {
@@ -436,14 +452,14 @@ Branco: #FFFFFF
     display: inline-block;
     height: 15px;
     position: relative;
-    top: 5px;
+    top: 15vh;
 }
 
 #trajetoria_fonte p {
     height: 15px;
     color: #FFFFFF;
     display: inline;
-    font-size: 10px;
+    font-size: min(10px, 1vw);
     position: relative;
 }
 
@@ -478,7 +494,7 @@ Branco: #FFFFFF
 #trajetoria_filmes li {
     top: 150px;
     height: 14%;
-    width: 14%;
+    width: 13vw;
     display: inline-block;
     position: relative;
     margin-left: 10px;
