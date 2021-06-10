@@ -428,7 +428,7 @@ Branco: #FFFFFF
     display: flex;
     position: relative;
     text-align: right;
-    top: 6vh;
+    top: 12vh;
 }
 
 #trajetoria_img img {
@@ -452,7 +452,7 @@ Branco: #FFFFFF
     display: inline-block;
     height: 15px;
     position: relative;
-    top: 5vh;
+    top: 15vh;
 }
 
 #trajetoria_fonte p {
@@ -494,7 +494,7 @@ Branco: #FFFFFF
 #trajetoria_filmes li {
     top: 150px;
     height: 14%;
-    width: 12vw;
+    width: 13vw;
     display: inline-block;
     position: relative;
     margin-left: 10px;
