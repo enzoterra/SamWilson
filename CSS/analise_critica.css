@@ -1,0 +1,86 @@
+main {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+}
+
+
+/* Imagem Superior */
+#img_inicial {
+    top: 66px;
+    position: relative;
+    width: 100%;
+}
+
+#img_inicial img {
+    height: 52vh;
+    width: 100%;
+    border: 5px solid #000000;
+    object-fit: cover;
+    object-position: top;
+    transition: 0.3s;
+}
+
+#img_inicial:hover img {
+    transform: scale(1.015);
+    border: 0px solid #000000;
+}
+
+
+/*Textos e Imagens*/
+
+#titulo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: max(20px, 3vw);
+    color: #FFFFFF;
+    top: 30vh;
+    width: 100%;
+    text-align: left;
+    margin-left: 100px;
+    position: relative;
+    display: inline;
+}
+
+
+.flex {
+    display: flex;
+    margin-top: 10vh;
+    position: relative;
+}
+
+
+p {
+    color: #FFFFFF;
+    font-size: max(15px, 1.5vw);
+    width: 90%;
+    text-align: justify;
+    text-indent: 2em;    
+}
+
+
+#texto {
+    width: 90%;
+    padding: 15vh;
+}
+
+#imagens {
+    width: 70%;
+    padding: 10vh;
+    top: 20vh;
+    position: relative;
+}
+
+
+#textos img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    transition: 0.3s;
+    object-fit: contain;
+}
+
+#primeiroTexto {
+    top: 20vh;
+    position: relative;
+}
