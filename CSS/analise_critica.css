@@ -17,7 +17,7 @@ main {
     width: 100%;
     border: 5px solid #000000;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
     transition: 0.3s;
 }
 
@@ -44,32 +44,35 @@ main {
 
 .flex {
     display: flex;
-    margin-top: 10vh;
+    margin-top: 8vh;
     position: relative;
+    top: 8vh;
 }
 
 
 p {
     color: #FFFFFF;
     font-size: max(15px, 1.5vw);
-    width: 90%;
+    width: 100%;
     text-align: justify;
     text-indent: 2em;    
 }
 
 
 #texto {
-    width: 90%;
+    width: 100%;
     padding: 15vh;
 }
 
 #imagens {
-    width: 70%;
-    padding: 10vh;
-    top: 20vh;
+    width: 90%;
+    padding: 8vh;
     position: relative;
 }
 
+#imagens:hover img {
+    transform: scale(1.1);
+}
 
 #textos img {
     max-width: 100%;
@@ -80,7 +83,114 @@ p {
     object-fit: contain;
 }
 
+
 #primeiroTexto {
     top: 20vh;
+    position: relative;
+}
+
+#primeiroTexto #imagens img{
+    top: 9vh;
+    position: relative;
+} 
+
+#img2 {
+    top: 50vh;
+    position: relative;
+}
+
+
+#segundoTexto #imagens{
+    top: 6vh;
+    position: relative;
+    left: 3vw;
+} 
+
+#segundoTexto #texto{
+    position: relative;
+    left: 1vw;
+} 
+
+#terceiroTexto {
+    top: -5vh;
+}
+
+#terceiroTexto img{
+    top: 15vh;
+}
+
+#terceiroTexto #imagens{
+    top: 10vh;
+    position: relative;
+    left: 3vw;
+} 
+
+#terceiroTexto #imagens img{
+    height: 70%;
+    top: 15vh;
+} 
+
+#quartoTexto {
+    top: -35vh;
+}
+
+#quartoTexto #imagens img{
+    top: 15vh;
+    position: relative;
+    left: 3vw;
+} 
+
+#quintoTexto {
+    top: -55vh;
+}
+
+#quintoTexto #imagens img{
+    top: 30vh;
+    position: relative;
+    right: 3vw;
+} 
+
+#imagensFinal{
+    top: -50vh;
+    width: 100%;
+    text-align: center;
+}
+
+#imagensFinal #imagens {
+    width: 100%;
+}
+
+#imagensFinal #imagens li {
+    height: 90%;
+    width: 30%;
+    display: inline-block;
+    position: relative;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+
+#imagensFinal img {
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    transition: .3s;
+    position: relative;
+    object-fit: contain;
+}
+
+#imagensFinal li:hover img {
+    transform: scale(1.2);
+}
+
+
+/*Rodapé*/
+
+footer {
+    width: 100%;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
     position: relative;
 }
