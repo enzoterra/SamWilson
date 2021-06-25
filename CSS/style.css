@@ -68,6 +68,7 @@ header label {
     padding: 8px;
     position: fixed;
     z-index: 2;
+    cursor: pointer;
 }
 
 header label:hover img {
