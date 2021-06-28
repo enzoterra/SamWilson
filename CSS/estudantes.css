@@ -91,7 +91,7 @@ main {
     transform: scale(1.1);
 }
 
-#img_descricao_fotos:hover img {
+#img_descricao_fotos img:hover{
     transform: scale(1.1);
 }
 
