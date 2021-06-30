@@ -76,6 +76,8 @@ main {
     display: flex;
     position: relative;
     top: 10vh;
+    width: 100%;
+    height: 80vh;
 }
 
 #img_descricao_fotos img {
