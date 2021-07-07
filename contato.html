@@ -8,6 +8,9 @@
     <link rel="shortcut icon" href="Imagens/Icones/simbolo2.ico" />
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/contato.css">
+    <script src="JS/contato.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.min.js"></script>
 </head>
 
 <body>
@@ -56,26 +59,27 @@
 
             <div id="div_form">
     
-                <form action="receber_form.php" method="POST">
+                <form id="formContato" action="contato.js" method="POST" onsubmit="return validarCampos()">
 
+                    <div class="div-mensagem"><span id="msgErro"></span></div>
+                    
                     <label for="nomesobrenome">Nome e Sobrenome</label>
-                    <input class="input_padrao" type="text" id="nomesobrenome" name="nome" required
+                    <input class="input_padrao" type="text" id="nomesobrenome" name="nome"
                         placeholder="Daniel Cardoso">
 
                     <br>
                     <label for="email">Email</label>
-                    <input class="input_padrao" type="email" id="email" name="email" required
+                    <input class="input_padrao" type="email" id="email" name="email"
                         placeholder=" email@dominio.com">
 
                     <br>
                     <label for="telefone">Telefone</label>
-                    <input class="input_padrao" type="tel" id="telefone" name="telefone" required
+                    <input class="input_padrao" type="tel" id="telefone" name="telefone"
                         placeholder=" (00) 0000-0000">
 
                     <br>
                     <label for="mensagens">Mensagens</label>
-                    <textarea class="input_padrao" id="mensagens" name="mensagens" cols="70" rows="10"
-                        required></textarea>
+                    <textarea class="input_padrao" id="mensagens" name="mensagens" cols="70" rows="10"></textarea>
 
                     <br><br>
                     <div>

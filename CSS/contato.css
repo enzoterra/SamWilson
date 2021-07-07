@@ -44,6 +44,15 @@ form label, form p {
     position: relative;
 }
 
+.div-mensagem {
+    font-size: 15px;
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+    padding-bottom: 15px;
+    line-height: 15px;
+}
+
 .input_padrao {
     display: block;
     margin: 10px 0 20px 0;
@@ -52,6 +61,14 @@ form label, form p {
     top: 30px;
     position: relative;
     font-size: 17px;
+}
+
+.input_padrao:invalid {
+    outline-color: red;
+}
+
+.input_padrao:valid {
+    outline-color: green;
 }
 
 .checkbox {
