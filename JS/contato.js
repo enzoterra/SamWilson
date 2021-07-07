@@ -1,7 +1,8 @@
-//Máscara no Telefone
+//Mascara no Telefone
 $(document).ready(function(){
-    $("#telefone").mask("(00) 00000-0000");
+    $("#telefone").mask("(99) 99999-9999");
 });
+
 
 function validarCampos(){
 
@@ -25,8 +26,7 @@ function validarCampos(){
 
     //Validação do email
     if ((form.email.value.indexOf(".") == -1) || 
-        (form.email.value.indexOf("@") == -1) || 
-        (form.email.value.indexOf(".") - form.email.value.indexOf("@") == 1)){
+        (form.email.value.indexOf("@") == -1)){
             msgErro.innerHTML = msgErro.innerHTML + "Por favor preencha corretamente o campo Email <br>";
             form.email.focus();
             ret = false;
@@ -43,8 +43,15 @@ function validarCampos(){
 
     //Validação da Mensagem
     if (form.mensagens.value.trim() == ""){
-        msgErro.innerHTML = "Por favor preencha o campo Mensagem <br>";
-        form.mensagens.focus();
+        msgErro.innerHTML = msgErro.innerHTML + "Por favor preencha o campo Mensagem <br>";
+        if(form.nomesobrenome.value.trim() == ""){
+            form.nomesobrenome.focus();
+        }
+        else if(form.email.value.trim() == ""){
+            form.email.focus();
+        } else{
+            form.mensagens.focus();
+        }
         ret = false;
     }
     

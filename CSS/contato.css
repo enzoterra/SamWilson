@@ -61,6 +61,7 @@ form label, form p {
     top: 30px;
     position: relative;
     font-size: 17px;
+    transition: .3s;
 }
 
 .input_padrao:invalid {
